@@ -82,8 +82,6 @@ cp -a rdoc $RPM_BUILD_ROOT%{ruby_rdocdir}/%{name}-%{version}
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
-rm $RPM_BUILD_ROOT%{ruby_ridir}/Net/cdesc-Net.yaml
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
